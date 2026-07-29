@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Who already tracks the cost of living — The NYC Affordability Index</title>
+<meta name="description" content="The existing landscape of New York City cost-of-living and hardship measures: who publishes them, what they measure, how they are built and how often they land.">
+<link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
+<style>
+  @font-face {
+    font-family: 'GascogneTS';
+    src: url('fonts/GascogneTS-Light.ttf') format('truetype');
+    font-weight: 300; font-style: normal; font-display: swap;
+  }
+  :root {
+    --black:#050507; --white:#fff; --cloud:#dddddd; --chartreuse:#dde44c;
+    --chartreuse-20:#f7f8dd; --orange:#ff7c53; --periwinkle:#9b9fbc;
+    --charcoal:#707175; --cerulean:#217ebe; --green:#57aa4a; --red:#d2232a;
+    --sans:'halyard-text','Inter','Helvetica Neue',Arial,sans-serif;
+    --serif:'GascogneTS','Source Serif 4',Georgia,serif;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:var(--sans); font-weight:300; background:var(--white); color:var(--black); line-height:1.5; padding:0 0 4rem; }
+  .wrap { max-width:1180px; margin:0 auto; padding:3rem 2rem 0; }
+
+  .mast { display:flex; justify-content:space-between; align-items:flex-end; gap:2rem; flex-wrap:wrap;
+    border-bottom:2px solid var(--black); padding-bottom:1.1rem; margin-bottom:1.5rem; }
+  .mast .kicker { font-weight:700; font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--orange); margin-bottom:0.5rem; }
+  .mast h1 { font-weight:900; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.02; letter-spacing:-0.02em; }
+  .mast .issue { font-size:0.78rem; color:var(--charcoal); text-align:right; line-height:1.75; }
+  .mast .issue b { display:block; color:var(--black); font-weight:700; }
+  .mast .issue a { color:var(--black); text-decoration:none; border-bottom:1px solid var(--orange); }
+  .mast .issue a:hover { color:var(--orange); }
+
+  .lede { font-family:var(--serif); font-size:1.18rem; line-height:1.5; color:var(--charcoal); max-width:64ch; margin-bottom:2.25rem; }
+
+  .layout { display:grid; grid-template-columns:230px 1fr; gap:3rem; align-items:start; }
+  nav.toc { position:sticky; top:2rem; border-top:1px solid var(--black); padding-top:0.7rem; }
+  nav.toc .t { font-weight:700; font-size:0.6rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--charcoal); margin-bottom:0.5rem; }
+  nav.toc ol { list-style:none; counter-reset:s; }
+  nav.toc li { margin-bottom:0.3rem; }
+  nav.toc a { color:var(--black); text-decoration:none; font-size:0.78rem; line-height:1.35; display:block; border-left:2px solid transparent; padding-left:0.55rem; }
+  nav.toc a:hover { border-left-color:var(--orange); color:var(--orange); }
+
+  article { max-width:74ch; }
+  article h2 { font-weight:900; font-size:1.55rem; letter-spacing:-0.01em; margin:2.6rem 0 0.7rem; padding-bottom:0.35rem; border-bottom:1px solid var(--black); scroll-margin-top:1.5rem; }
+  article h2:first-of-type { margin-top:0; }
+  article h3 { font-weight:700; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; margin:1.8rem 0 0.5rem; }
+  article p { font-size:0.95rem; color:var(--charcoal); margin-bottom:0.85rem; }
+  article li { font-size:0.95rem; color:var(--charcoal); margin-bottom:0.4rem; }
+  article ul, article ol { padding-left:1.2rem; margin-bottom:1rem; }
+  article b, article strong { color:var(--black); font-weight:700; }
+  article em { font-style:italic; }
+  article a { color:var(--black); text-decoration:underline; text-decoration-color:var(--orange); text-underline-offset:2px; }
+  article a:hover { color:var(--orange); }
+  article code { font-family:var(--sans); font-weight:700; font-size:0.9em; color:var(--black); background:var(--chartreuse-20); padding:1px 4px; }
+  article pre { background:var(--black); color:var(--white); padding:1rem 1.1rem; overflow-x:auto; margin-bottom:1rem; }
+  article pre code { background:none; color:var(--white); font-weight:300; font-size:0.82rem; line-height:1.6; }
+  article hr { border:0; border-top:1px solid var(--cloud); margin:2.4rem 0; }
+  article table { width:100%; border-collapse:collapse; font-size:0.85rem; margin:0.6rem 0 1.2rem; display:block; overflow-x:auto; }
+  article th { font-weight:700; font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--charcoal);
+    text-align:left; padding:6px 10px; border-bottom:1px solid var(--black); white-space:nowrap; }
+  article td { padding:7px 10px; border-bottom:1px solid var(--cloud); color:var(--charcoal); vertical-align:top; }
+  article td strong { color:var(--black); }
+  article blockquote { border-left:3px solid var(--chartreuse); padding-left:1rem; margin-bottom:1rem; }
+  article > p > em:only-child { display:block; color:var(--charcoal); font-size:0.88rem; }
+
+  footer { margin-top:4rem; background:var(--orange); color:var(--white); padding:2.5rem 2rem; font-size:0.8rem; }
+  footer .fin { max-width:1180px; margin:0 auto; }
+  footer .fname { font-weight:900; font-size:1.1rem; letter-spacing:-0.01em; margin-bottom:0.3rem; }
+  footer a { color:var(--white); text-decoration:underline; text-underline-offset:2px; }
+
+  @media (max-width:860px) {
+    .layout { grid-template-columns:1fr; gap:1.5rem; }
+    nav.toc { position:static; }
+    .wrap { padding:2rem 1.1rem 0; }
+    .mast .issue { text-align:left; }
+  }
+  nav.toc ol.sibs { margin-bottom:0.2rem; }
+  nav.toc ol.sibs a { font-weight:700; font-size:0.8rem; }
+  nav.toc ol.sibs a.here { border-left-color:var(--orange); color:var(--orange); }
+
+:root{
+    --vc-black:var(--black); --vc-white:var(--white); --vc-cloud:var(--cloud);
+    --vc-chartreuse:var(--chartreuse); --vc-orange:var(--orange);
+    --vc-periwinkle:var(--periwinkle); --vc-charcoal:var(--charcoal);
+    --vc-cerulean:var(--cerulean); --vc-indigo:#394882; --vc-magenta:#e7466d;
+  }
+  .landscape{max-width:none;margin:0;padding:0;}
+  .tracker h3 a{color:inherit;text-decoration:none;border-bottom:2px solid transparent;}
+  .tracker h3 a:hover{border-bottom-color:var(--orange);}
+  @media (max-width:820px){.tracker-grid{grid-template-columns:1fr;}}
+
+/* Landscape framing */
+.landscape {
+  max-width: 1200px;
+  margin: 48px auto 0;
+  padding: 0 40px;
+}
+.landscape .section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--vc-black);
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+}
+.landscape .section-head h2 {
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: -0.2px;
+}
+.landscape .section-head .eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--vc-charcoal);
+}
+.landscape .intro {
+  font-weight: 200;
+  font-size: 16px;
+  color: var(--vc-charcoal);
+  line-height: 1.6;
+  max-width: 820px;
+  margin-bottom: 28px;
+}
+.tracker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 28px;
+}
+.tracker {
+  border: 1px solid var(--vc-cloud);
+  padding: 22px;
+  background: var(--vc-white);
+  border-top: 4px solid var(--vc-indigo);
+}
+.tracker.alice { border-top-color: var(--vc-orange); }
+.tracker.columbia { border-top-color: var(--vc-magenta); }
+.tracker.nycgov { border-top-color: var(--vc-chartreuse); }
+.tracker.sss { border-top-color: var(--vc-cerulean); }
+.tracker.csss { border-top-color: var(--vc-periwinkle); }
+.tracker .who {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  color: var(--vc-charcoal);
+  margin-bottom: 8px;
+}
+.tracker h3 {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.tracker .detail {
+  font-size: 13px;
+  line-height: 1.55;
+  margin-bottom: 10px;
+}
+.tracker .detail strong { font-weight: 700; }
+.tracker .meta {
+  font-size: 11px;
+  color: var(--vc-charcoal);
+  border-top: 1px solid var(--vc-cloud);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.tracker .meta span + span { margin-left: 14px; }
+.tracker h3 a { color: inherit; text-decoration: none; border-bottom: 2px solid transparent; transition: border-color 0.15s; }
+.tracker h3 a:hover { border-bottom-color: var(--vc-orange); }
+.tracker .report-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--vc-black);
+  text-decoration: none;
+  border-bottom: 2px solid var(--vc-chartreuse);
+  padding-bottom: 2px;
+}
+.tracker .report-link:hover { border-bottom-color: var(--vc-orange); color: var(--vc-orange); }
+.tracker .report-link .arrow { color: var(--vc-orange); margin-left: 4px; }
+.tracker .secondary-link {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: var(--vc-charcoal);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--vc-charcoal);
+}
+.tracker .secondary-link:hover { color: var(--vc-black); border-bottom-color: var(--vc-black); }
+.gap-callout {
+  background: var(--vc-black);
+  color: var(--vc-white);
+  padding: 28px 32px;
+  margin: 20px 0 8px;
+}
+.gap-callout h3 {
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--vc-chartreuse);
+  margin-bottom: 10px;
+  letter-spacing: -0.2px;
+}
+.gap-callout p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--vc-cloud);
+  max-width: 880px;
+}
+.gap-callout p + p { margin-top: 10px; }
+
+/* Placeholder notice */
+.placeholder-notice {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 18px 28px;
+  background: repeating-linear-gradient(45deg, #fde5dd, #fde5dd 10px, #fff 10px, #fff 20px);
+  border-left: 5px solid var(--vc-orange);
+  border-right: 5px solid var(--vc-orange);
+}
+.placeholder-notice .inner {
+  background: var(--vc-white);
+  padding: 14px 18px;
+  border: 1px solid var(--vc-orange);
+}
+.placeholder-notice .tag {
+  display: inline-block;
+  background: var(--vc-orange);
+  color: var(--vc-white);
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  margin-right: 10px;
+}
+.placeholder-notice p {
+  display: inline;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.placeholder-notice p strong { font-weight: 700; }
+
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div>
+      <div class="kicker">The NYC Affordability Index · Background</div>
+      <h1>Who already tracks the cost of living in New York City?</h1>
+    </div>
+    <div class="issue">
+      <a href="./">&larr; Back to the index</a><br>
+      <a href="https://github.com/vitalcity-nyc/nyc-affordability-index">Source and data</a>
+    </div>
+  </header>
+
+  <p class="lede">Before adding another measure, it is worth being plain about what already exists. At least five organizations publish regular measures of what it costs to live in New York City, or of who is falling short of that cost. Each has real strengths and real limits.</p>
+
+  <p style="font-size:0.95rem;">These are the reference works this index is built against. They are deeper than anything published monthly, and none of them are replaced by it. What they share is cadence: the fastest lands once a year, and most arrive a year or more after the period they describe. <b>The index this page supports does one thing they do not — it moves every month.</b> <a href="./">See the index &rarr;</a></p>
+
+<div class="tracker-grid">
+
+    <div class="tracker alice">
+      <div class="who">WCECA · Fund for the City of New York</div>
+      <h3><a href="https://www.fcny.org/nyc-true-cost/" target="_blank" rel="noopener">The True Cost of Living in New York City</a></h3>
+      <p class="detail">The Women's Center for Education and Career Advancement (WCECA), fiscally sponsored by the Fund for the City of New York, publishes "Overlooked &amp; Undercounted: The True Cost of Living in New York City" — <strong>formerly known as the NYC Self-Sufficiency Standard</strong>, rebranded to better communicate what the number represents to a public audience. It measures how many New Yorkers fall below a realistic cost-of-living threshold, including millions who earn above the federal poverty line but still cannot make ends meet.</p>
+      <p class="detail"><strong>Methodology:</strong> bottom-up budget by borough and family composition (housing via HUD FMR, childcare from state provider data, food via USDA Low-Cost Plan, healthcare via MEPS, transportation, taxes, and a miscellaneous category), combined with ACS microdata to count households below the threshold by race, immigration status, household type, and borough. Retains the Self-Sufficiency Standard framework under a new public-facing name.</p>
+      <div class="meta"><span>Cadence: every 3–4 years</span><span>Geography: five boroughs</span><span>Latest: 2023 report</span></div>
+      <a class="report-link" href="https://www.fcny.org/nyc-true-cost/" target="_blank" rel="noopener">Latest NYC True Cost report <span class="arrow">→</span></a>
+      <a class="secondary-link" href="https://www.fcny.org/" target="_blank" rel="noopener">Fund for the City of New York</a>
+    </div>
+
+    <div class="tracker columbia">
+      <div class="who">Columbia University × Robin Hood</div>
+      <h3><a href="https://robinhood.org/news/2026-annual-poverty-tracker-report-release/" target="_blank" rel="noopener">The Poverty Tracker</a></h3>
+      <p class="detail">A longitudinal panel study run by Columbia's Center on Poverty and Social Policy and Robin Hood Foundation that has followed roughly 4,000 NYC households since 2012. It measures income poverty (using an NYC-adjusted Supplemental Poverty Measure), material hardship across housing, food, medical care and bills, and financial health — and it follows the same households over time, so it can see who moves into and out of hardship.</p>
+      <p class="detail"><strong>Methodology:</strong> quarterly surveys of a representative NYC panel; annual reports combining income, hardship, and health measures. The panel design is its defining feature.</p>
+      <div class="meta"><span>Cadence: annual report, quarterly surveys</span><span>Geography: five boroughs</span><span>Latest report: 2024 data</span></div>
+      <a class="report-link" href="https://robinhood.org/news/2026-annual-poverty-tracker-report-release/" target="_blank" rel="noopener">Latest Poverty Tracker report <span class="arrow">→</span></a>
+      <a class="secondary-link" href="https://www.robinhood.org/" target="_blank" rel="noopener">Robin Hood</a>
+    </div>
+
+    <div class="tracker nycgov">
+      <div class="who">NYC Mayor's Office · NYC Opportunity</div>
+      <h3><a href="https://www.nyc.gov/site/opportunity/poverty-in-nyc/poverty-measure.page" target="_blank" rel="noopener">NYCgov Poverty Measure</a></h3>
+      <p class="detail">The city's official annual poverty measure, published by NYC Opportunity (formerly the Center for Economic Opportunity). It adapts the federal Supplemental Poverty Measure to NYC by using local housing costs, factoring in tax credits and non-cash benefits like SNAP, and accounting for necessary work and medical expenses. Used by every city agency that reports on poverty.</p>
+      <p class="detail"><strong>Methodology:</strong> ACS microdata combined with NYC-specific thresholds; produces poverty and "near-poverty" (under 150 percent of the threshold) rates by borough, age, race, and work status.</p>
+      <div class="meta"><span>Cadence: annual, ~2-year lag</span><span>Geography: five boroughs</span><span>Latest: 2022 data, 2024 release</span></div>
+      <a class="report-link" href="https://www.nyc.gov/site/opportunity/poverty-in-nyc/poverty-measure.page" target="_blank" rel="noopener">Latest NYCgov poverty report <span class="arrow">→</span></a>
+      <a class="secondary-link" href="https://www.nyc.gov/site/opportunity/index.page" target="_blank" rel="noopener">NYC Opportunity</a>
+    </div>
+
+    <div class="tracker csss">
+      <div class="who">Community Service Society</div>
+      <h3><a href="https://www.cssny.org/publications/c/unheard-third" target="_blank" rel="noopener">The Unheard Third</a></h3>
+      <p class="detail">An annual scientific survey of low-income New Yorkers (households below 200 percent of the federal poverty line) that focuses on their lived experience with affordability pressures — rent burden, food insecurity, healthcare access, ability to afford transit. The "unheard third" framing emphasizes that this roughly one-third of the city is underrepresented in standard polling and civic life.</p>
+      <p class="detail"><strong>Methodology:</strong> annual survey of ~1,700 low-income New Yorkers plus a comparison sample of moderate- and higher-income residents; question sets evolve to track current policy debates.</p>
+      <div class="meta"><span>Cadence: annual</span><span>Geography: five boroughs</span><span>Latest: 2024</span></div>
+      <a class="report-link" href="https://www.cssny.org/publications/c/unheard-third" target="_blank" rel="noopener">Latest Unheard Third survey <span class="arrow">→</span></a>
+      <a class="secondary-link" href="https://www.cssny.org/" target="_blank" rel="noopener">Community Service Society</a>
+    </div>
+
+    <div class="tracker">
+      <div class="who">MIT · EPI · Urban Institute / FPWA</div>
+      <h3><a href="https://livingwage.mit.edu/" target="_blank" rel="noopener">National calculators with NYC data</a></h3>
+      <p class="detail">MIT's Living Wage Calculator, EPI's Family Budget Calculator, and the Urban Institute's True Cost of Economic Security work all publish NYC-specific figures using standardized national methodologies. Their value is cross-city comparability — they let you say "NYC costs X percent more than Chicago for a family of four" using the same recipe. The Urban Institute's framework has been applied directly to the five boroughs in a 2025 report with the Federation of Protestant Welfare Agencies.</p>
+      <p class="detail"><strong>Methodology:</strong> bottom-up budgets using federal benchmarks (HUD Fair Market Rents, USDA food plans, MEPS healthcare, BLS transportation) re-weighted to NYC prices, for a range of household types.</p>
+      <div class="meta"><span>Cadence: annual to biennial</span><span>Geography: county / metro</span><span>Latest: 2024</span></div>
+      <a class="report-link" href="https://livingwage.mit.edu/" target="_blank" rel="noopener">MIT Living Wage <span class="arrow">→</span></a>
+      <a class="secondary-link" href="https://www.epi.org/resources/budget/" target="_blank" rel="noopener">EPI Family Budget</a>
+      <a class="secondary-link" href="https://www.fpwa.org/wp-content/uploads/2025/09/True-Cost-of-Economic-Security_Policy-Implications-for-New-York-City_9.29.25-1.pdf" target="_blank" rel="noopener">True Cost of Economic Security (NYC)</a>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <div class="fin">
+    <div class="fname">The NYC Affordability Index</div>
+    <div>Everyday New York prices, tracked monthly from public sources.
+      <a href="./">Back to the index</a> &middot;
+      <a href="https://github.com/vitalcity-nyc/nyc-affordability-index">Source and data</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
