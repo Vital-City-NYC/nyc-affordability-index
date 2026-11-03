@@ -20,7 +20,7 @@ rents and bills. It is not a cost-of-living index and not a substitute
 for the Consumer Price Index — the CPI is itself one of the statistics
 carried.
 
-The distinction is load-bearing, so state it plainly:
+The difference:
 
 - A **price index** (CPI, PCE) tracks the cost of a fixed or
   chained basket of goods weighted by expenditure shares, with quality
@@ -269,7 +269,7 @@ separate:
 
 The chart plots values at their **reference period**, not their release
 or retrieval date. The card's "as of" line shows retrieval. Confusing
-these is the most common way a dashboard like this goes wrong, and
+these is a common way a dashboard like this goes wrong, and
 `readings.json` stores the reference period explicitly.
 
 ### 5.2 Publication lag
@@ -395,8 +395,8 @@ This rule was added after an audit found three violations:
 - **ConEd** and **Case-Shiller** carried shape-approximated back-history
   beneath month-specific readings. Both now carry only real observations.
 
-The cost of the rule is shorter series; the benefit is that every
-plotted move is a real move. Where removing a splice leaves fewer than
+The rule shortens some series, and every plotted move is an observed
+change. Where removing a splice leaves fewer than
 three points, the series falls under §6.5.1 and is drawn as discrete
 points rather than a line.
 
@@ -447,7 +447,7 @@ view the headline number is replaced by the change across the series'
 Two safeguards apply, because a naive year-to-date figure is easy to
 misread:
 
-1. **The window is stated, not assumed.** Several series have no
+1. **The window is stated.** Several series have no
    January reading — gasoline begins in April, the CPI lines in April,
    ConEd in April. Each card prints its actual span ("Apr → Jul 2026")
    rather than implying a January baseline. The control is labeled
@@ -539,8 +539,8 @@ a second sale, is weighted toward the single-family market, and is
 smoothed by a three-month moving average. Its NY metro definition is
 much larger than the city, and co-op transactions — a large share of
 Manhattan housing — are handled differently from detached housing
-markets. It is a sound index of its own concept; that concept is not
-"the price of a New York apartment."
+markets. It is a sound index, but it does not measure "the price of a
+New York apartment."
 
 ### 7.5 Seasonal rate structures (ConEd electricity)
 
@@ -607,8 +607,6 @@ value; on fetch failure it holds the prior reading and logs the failure.
 
 ## 9. Statements this dashboard does not support
 
-Stated explicitly, because the failure modes are predictable:
-
 1. **"New York got X% more expensive."** No composite exists here. Use
    `cpi_allitems` for that claim, with its metro caveat.
 2. **"The typical New Yorker pays $X."** Nothing on this page is a
@@ -642,4 +640,4 @@ Stated explicitly, because the failure modes are predictable:
 
 *Questions, corrections, and methodological objections are welcome as
 issues on the repository. Where this document and the display disagree,
-this document is the specification and the display is the bug.*
+the document governs and the display should be corrected.*
