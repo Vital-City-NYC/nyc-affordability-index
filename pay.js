@@ -101,7 +101,10 @@
     `In ${aLast}, ${AC(pct(a.share_30_plus), aLast, 'B25070')} of New York City renter households spent 30 percent or more of their income on rent.`;
   $('lede').innerHTML =
     `In ${aLast}, ${AC(pct(a.share_50_plus), aLast, 'B25070')} of the city's renter households spent half or more of their income on rent. ` +
-    `From ${myear(refLY)} to ${myear(M.ahe_ref)}, average hourly pay for jobs in the city rose ${calc(p1(lastRow.pay), 'three-month averages of the BLS series compared with the same months a year earlier')}, comparing three-month averages, and prices in the area ${chgC(lastRow.prices, CPIu, CPIt)}, comparing single months. ` +
+    `From ${myear(refLY)} to ${myear(M.ahe_ref)}, average hourly pay for jobs in the city rose ${calc(p1(lastRow.pay), 'three-month averages of the BLS series compared with the same months a year earlier')}, comparing three-month averages` +
+    (lastRow.prices == null
+      ? `. BLS published no New York price index for ${myear(refLY)} because of the federal shutdown, so there is no twelve-month price change to set beside it. `
+      : `, and prices in the area ${chgC(lastRow.prices, CPIu, CPIt)}, comparing single months. `) +
     `Prices are tracked in detail on <a href="./">What New York Costs</a>.`;
 
   // ---- monthly chart ------------------------------------------------------

@@ -1,6 +1,6 @@
 {
  "_about": "Prices set by a public body (or, for Citi Bike, posted by the operator under its city contract). Each is the same product at every date, so a change in the number is a change in price. 'steps' lists the price in effect from each date; checked against the source on 'verified'. Add a step only when the source confirms it.",
- "verified": "2026-10-21",
+ "verified": "2026-11-24",
  "items": [
   {
    "id": "subway",

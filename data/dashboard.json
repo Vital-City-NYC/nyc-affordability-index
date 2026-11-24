@@ -1,51 +1,51 @@
 {
- "built": "2026-11-06",
- "ref": "2026-09",
+ "built": "2026-11-24",
+ "ref": "2026-10",
  "base": "2025-12",
- "ref_ly": "2025-09",
+ "ref_ly": "2025-10",
  "base_ly": "2024-12",
- "ly_gap": false,
- "bls_fetched": "2026-10-21",
+ "ly_gap": true,
+ "bls_fetched": "2026-11-24",
  "contrib": {
   "base": "2025-12",
-  "ref": "2026-09",
+  "ref": "2026-10",
   "weights_from": "2025-12",
-  "total": 3.962,
+  "total": 4.586,
   "groups": [
    {
     "code": "SAH",
     "name": "Housing",
     "weight": 48.777,
-    "change": 3.1962,
-    "contrib": 1.559,
+    "change": 3.4604,
+    "contrib": 1.6879,
     "parts": [
      {
       "code": "SEHA",
       "name": "Rent",
       "weight": 11.163,
-      "change": 2.936,
-      "contrib": 0.3277
+      "change": 3.2324,
+      "contrib": 0.3608
      },
      {
       "code": "SEHC01",
       "name": "Owners' equivalent rent",
       "weight": 26.798,
-      "change": 3.9311,
-      "contrib": 1.0534
+      "change": 4.0775,
+      "contrib": 1.0927
      },
      {
       "code": "SAH3",
       "name": "Furnishings and household operations",
       "weight": 3.653,
-      "change": -1.5627,
-      "contrib": -0.0571
+      "change": -0.3755,
+      "contrib": -0.0137
      },
      {
       "code": null,
       "name": "Everything else in housing",
       "weight": 7.163,
       "change": null,
-      "contrib": 0.2349,
+      "contrib": 0.2481,
       "remainder": true
      }
     ]
@@ -54,232 +54,101 @@
     "code": "SAT",
     "name": "Transportation",
     "weight": 12.118,
-    "change": 11.437,
-    "contrib": 1.3859,
+    "change": 15.1267,
+    "contrib": 1.8331,
     "parts": [
      {
       "code": "SETB01",
       "name": "Gasoline (car costs)",
       "weight": 1.746,
-      "change": 45.9417,
-      "contrib": 0.8021
+      "change": 44.9926,
+      "contrib": 0.7856
      },
      {
       "code": null,
       "name": "Other car costs: vehicles, insurance, repairs, parking and tolls",
       "weight": 7.283,
-      "change": 0.0385,
-      "contrib": 0.0028,
+      "change": -0.3386,
+      "contrib": -0.0247,
       "derived": true
      },
      {
       "code": null,
       "name": "Fares: airlines, subway and bus, commuter rail, intercity",
       "weight": 3.089,
-      "change": 18.8084,
-      "contrib": 0.581,
+      "change": 34.7091,
+      "contrib": 1.0722,
       "derived": true
      }
     ],
     "private": {
      "weight": 9.029,
-     "change": 8.9147,
-     "contrib": 0.8049
+     "change": 8.4277,
+     "contrib": 0.7609
     }
    },
    {
     "code": "SAF",
     "name": "Food and beverages",
     "weight": 15.634,
-    "change": 2.3253,
-    "contrib": 0.3635,
+    "change": 2.9054,
+    "contrib": 0.4542,
     "parts": []
    },
    {
     "code": "SAM",
     "name": "Medical care",
     "weight": 7.176,
-    "change": 0.6806,
-    "contrib": 0.0488,
+    "change": 0.7209,
+    "contrib": 0.0517,
     "parts": []
    },
    {
     "code": "SAE",
     "name": "Education and communication",
     "weight": 5.849,
-    "change": 1.5981,
-    "contrib": 0.0935,
+    "change": 1.2394,
+    "contrib": 0.0725,
     "parts": []
    },
    {
     "code": "SAR",
     "name": "Recreation",
     "weight": 4.239,
-    "change": 3.6483,
-    "contrib": 0.1547,
+    "change": 6.357,
+    "contrib": 0.2695,
     "parts": []
    },
    {
     "code": "SAA",
     "name": "Apparel",
     "weight": 3.258,
-    "change": 10.5789,
-    "contrib": 0.3447,
+    "change": 6.263,
+    "contrib": 0.204,
     "parts": []
    },
    {
     "code": "SAG",
     "name": "Other goods and services",
     "weight": 2.947,
-    "change": 0.3979,
-    "contrib": 0.0117,
+    "change": 0.4382,
+    "contrib": 0.0129,
     "parts": []
    }
   ],
-  "without_car_costs": 3.4704
+  "without_car_costs": 4.2047
  },
- "contrib_ly": {
-  "base": "2024-12",
-  "ref": "2025-09",
-  "weights_from": "2024-12",
-  "total": 2.8015,
-  "groups": [
-   {
-    "code": "SAH",
-    "name": "Housing",
-    "weight": 47.802,
-    "change": 3.1452,
-    "contrib": 1.5035,
-    "parts": [
-     {
-      "code": "SEHA",
-      "name": "Rent",
-      "weight": 10.477,
-      "change": 2.887,
-      "contrib": 0.3025
-     },
-     {
-      "code": "SEHC01",
-      "name": "Owners' equivalent rent",
-      "weight": 26.022,
-      "change": 2.6218,
-      "contrib": 0.6823
-     },
-     {
-      "code": "SAH3",
-      "name": "Furnishings and household operations",
-      "weight": 4.055,
-      "change": 4.6838,
-      "contrib": 0.1899
-     },
-     {
-      "code": null,
-      "name": "Everything else in housing",
-      "weight": 7.248,
-      "change": null,
-      "contrib": 0.3288,
-      "remainder": true
-     }
-    ]
-   },
-   {
-    "code": "SAT",
-    "name": "Transportation",
-    "weight": 14.828,
-    "change": 0.9063,
-    "contrib": 0.1344,
-    "parts": [
-     {
-      "code": "SETB01",
-      "name": "Gasoline (car costs)",
-      "weight": 1.736,
-      "change": 5.8414,
-      "contrib": 0.1014
-     },
-     {
-      "code": null,
-      "name": "Other car costs: vehicles, insurance, repairs, parking and tolls",
-      "weight": 9.836,
-      "change": 1.8526,
-      "contrib": 0.1822,
-      "derived": true
-     },
-     {
-      "code": null,
-      "name": "Fares: airlines, subway and bus, commuter rail, intercity",
-      "weight": 3.256,
-      "change": -4.5831,
-      "contrib": -0.1492,
-      "derived": true
-     }
-    ],
-    "private": {
-     "weight": 11.572,
-     "change": 2.451,
-     "contrib": 0.2836
-    }
-   },
-   {
-    "code": "SAF",
-    "name": "Food and beverages",
-    "weight": 14.183,
-    "change": 2.5639,
-    "contrib": 0.3636,
-    "parts": []
-   },
-   {
-    "code": "SAM",
-    "name": "Medical care",
-    "weight": 6.393,
-    "change": 1.7493,
-    "contrib": 0.1118,
-    "parts": []
-   },
-   {
-    "code": "SAE",
-    "name": "Education and communication",
-    "weight": 7.42,
-    "change": 1.7332,
-    "contrib": 0.1286,
-    "parts": []
-   },
-   {
-    "code": "SAR",
-    "name": "Recreation",
-    "weight": 4.278,
-    "change": 4.2367,
-    "contrib": 0.1812,
-    "parts": []
-   },
-   {
-    "code": "SAA",
-    "name": "Apparel",
-    "weight": 2.38,
-    "change": 9.6818,
-    "contrib": 0.2304,
-    "parts": []
-   },
-   {
-    "code": "SAG",
-    "name": "Other goods and services",
-    "weight": 2.716,
-    "change": 5.4452,
-    "contrib": 0.1479,
-    "parts": []
-   }
-  ],
-  "without_car_costs": 2.8473
- },
+ "contrib_ly": null,
  "lines": [
   {
    "key": "all",
    "id": "CUURS12ASA0",
    "label": "All items",
    "weight": 100.0,
-   "ref": "2026-09",
-   "ytd": 3.962,
-   "ytd_ly": 2.8015,
-   "yoy": 4.5315,
+   "ref": "2026-10",
+   "ytd": 4.586,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -364,6 +233,10 @@
     [
      "2026-09",
      363.87
+    ],
+    [
+     "2026-10",
+     366.054
     ]
    ]
   },
@@ -372,10 +245,10 @@
    "id": "CUURS12ASA0L1E",
    "label": "All items less food and energy",
    "weight": 80.206,
-   "ref": "2026-09",
-   "ytd": 3.1271,
-   "ytd_ly": 2.6383,
-   "yoy": 3.7326,
+   "ref": "2026-10",
+   "ytd": 3.9137,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -460,6 +333,10 @@
     [
      "2026-09",
      375.068
+    ],
+    [
+     "2026-10",
+     377.929
     ]
    ]
   },
@@ -468,10 +345,10 @@
    "id": "CUURS12ASEHA",
    "label": "Rent of primary residence",
    "weight": 11.163,
-   "ref": "2026-09",
-   "ytd": 2.936,
-   "ytd_ly": 2.887,
-   "yoy": 3.9929,
+   "ref": "2026-10",
+   "ytd": 3.2324,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -556,6 +433,10 @@
     [
      "2026-09",
      510.477
+    ],
+    [
+     "2026-10",
+     511.947
     ]
    ]
   },
@@ -564,10 +445,10 @@
    "id": "CUURS12ASEHC01",
    "label": "Owners' equivalent rent",
    "weight": 26.798,
-   "ref": "2026-09",
-   "ytd": 3.9311,
-   "ytd_ly": 2.6218,
-   "yoy": 5.119,
+   "ref": "2026-10",
+   "ytd": 4.0775,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -652,6 +533,10 @@
     [
      "2026-09",
      520.439
+    ],
+    [
+     "2026-10",
+     521.172
     ]
    ]
   },
@@ -660,10 +545,10 @@
    "id": "CUURS12ASAF11",
    "label": "Food at home",
    "weight": 8.68,
-   "ref": "2026-09",
-   "ytd": 1.9555,
-   "ytd_ly": 2.8654,
-   "yoy": 2.1042,
+   "ref": "2026-10",
+   "ytd": 2.7556,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -748,6 +633,10 @@
     [
      "2026-09",
      338.169
+    ],
+    [
+     "2026-10",
+     340.823
     ]
    ]
   },
@@ -756,10 +645,10 @@
    "id": "CUURS12ASEFV",
    "label": "Food away from home",
    "weight": 5.804,
-   "ref": "2026-09",
-   "ytd": 2.9273,
-   "ytd_ly": 2.4292,
-   "yoy": 3.6257,
+   "ref": "2026-10",
+   "ytd": 3.4106,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -844,6 +733,10 @@
     [
      "2026-09",
      411.392
+    ],
+    [
+     "2026-10",
+     413.324
     ]
    ]
   },
@@ -852,10 +745,10 @@
    "id": "CUURS12ASA0E",
    "label": "Energy",
    "weight": 5.309,
-   "ref": "2026-09",
-   "ytd": 20.9849,
-   "ytd_ly": 5.6062,
-   "yoy": 21.5029,
+   "ref": "2026-10",
+   "ytd": 19.019,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -940,6 +833,10 @@
     [
      "2026-09",
      332.014
+    ],
+    [
+     "2026-10",
+     326.619
     ]
    ]
   },
@@ -948,10 +845,10 @@
    "id": "CUURS12ASETB01",
    "label": "Gasoline",
    "weight": 1.746,
-   "ref": "2026-09",
-   "ytd": 45.9417,
-   "ytd_ly": 5.8414,
-   "yoy": 36.8943,
+   "ref": "2026-10",
+   "ytd": 44.9926,
+   "ytd_ly": 1.6628,
+   "yoy": 41.5941,
    "series": [
     [
      "2024-12",
@@ -1040,6 +937,10 @@
     [
      "2026-09",
      350.73
+    ],
+    [
+     "2026-10",
+     348.449
     ]
    ]
   },
@@ -1048,10 +949,10 @@
    "id": "CUURS12ASAM",
    "label": "Medical care",
    "weight": 7.176,
-   "ref": "2026-09",
-   "ytd": 0.6806,
-   "ytd_ly": 1.7493,
-   "yoy": 0.6952,
+   "ref": "2026-10",
+   "ytd": 0.7209,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -1136,6 +1037,10 @@
     [
      "2026-09",
      575.15
+    ],
+    [
+     "2026-10",
+     575.38
     ]
    ]
   },
@@ -1144,10 +1049,10 @@
    "id": "CUURS12ASEEB",
    "label": "Tuition, other school fees and child care",
    "weight": null,
-   "ref": "2026-09",
-   "ytd": 3.467,
-   "ytd_ly": 4.302,
-   "yoy": 2.9463,
+   "ref": "2026-10",
+   "ytd": 3.7214,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -1232,6 +1137,10 @@
     [
      "2026-09",
      107.375
+    ],
+    [
+     "2026-10",
+     107.639
     ]
    ]
   },
@@ -1240,10 +1149,10 @@
    "id": "CUURS12ASAA",
    "label": "Apparel",
    "weight": 3.258,
-   "ref": "2026-09",
-   "ytd": 10.5789,
-   "ytd_ly": 9.6818,
-   "yoy": 2.3266,
+   "ref": "2026-10",
+   "ytd": 6.263,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -1328,6 +1237,10 @@
     [
      "2026-09",
      136.869
+    ],
+    [
+     "2026-10",
+     131.527
     ]
    ]
   },
@@ -1336,10 +1249,10 @@
    "id": "CUURS12ASETA01",
    "label": "New vehicles",
    "weight": null,
-   "ref": "2026-09",
-   "ytd": 1.4126,
-   "ytd_ly": 0.6107,
-   "yoy": 1.219,
+   "ref": "2026-10",
+   "ytd": 1.702,
+   "ytd_ly": 0.6053,
+   "yoy": 1.5134,
    "series": [
     [
      "2024-12",
@@ -1428,6 +1341,10 @@
     [
      "2026-09",
      262.462
+    ],
+    [
+     "2026-10",
+     263.211
     ]
    ]
   },
@@ -1436,10 +1353,10 @@
    "id": "CUURS12ASETA02",
    "label": "Used cars and trucks",
    "weight": null,
-   "ref": "2026-09",
-   "ytd": 0.0129,
-   "ytd_ly": 3.2682,
-   "yoy": -1.4801,
+   "ref": "2026-10",
+   "ytd": -1.9628,
+   "ytd_ly": 3.2505,
+   "yoy": -3.4098,
    "series": [
     [
      "2024-12",
@@ -1528,6 +1445,10 @@
     [
      "2026-09",
      363.042
+    ],
+    [
+     "2026-10",
+     355.87
     ]
    ]
   },
@@ -1536,10 +1457,10 @@
    "id": "CUURS12ASAH3",
    "label": "Household furnishings and operations",
    "weight": 3.653,
-   "ref": "2026-09",
-   "ytd": -1.5627,
-   "ytd_ly": 4.6838,
-   "yoy": 0.5403,
+   "ref": "2026-10",
+   "ytd": -0.3755,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -1624,6 +1545,10 @@
     [
      "2026-09",
      146.264
+    ],
+    [
+     "2026-10",
+     148.028
     ]
    ]
   },
@@ -1632,10 +1557,10 @@
    "id": "CUURS12ASAR",
    "label": "Recreation",
    "weight": 4.239,
-   "ref": "2026-09",
-   "ytd": 3.6483,
-   "ytd_ly": 4.2367,
-   "yoy": 1.9346,
+   "ref": "2026-10",
+   "ytd": 6.357,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -1720,6 +1645,10 @@
     [
      "2026-09",
      165.346
+    ],
+    [
+     "2026-10",
+     169.667
     ]
    ]
   }
@@ -1730,10 +1659,10 @@
    "id": "CUURS12ASAF111",
    "label": "Cereals and bakery products",
    "weight": null,
-   "ref": "2026-09",
-   "ytd": 2.2313,
-   "ytd_ly": 4.6443,
-   "yoy": 1.9209,
+   "ref": "2026-10",
+   "ytd": 1.5988,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -1818,6 +1747,10 @@
     [
      "2026-09",
      406.172
+    ],
+    [
+     "2026-10",
+     403.659
     ]
    ]
   },
@@ -1826,10 +1759,10 @@
    "id": "CUURS12ASAF112",
    "label": "Meats, poultry, fish and eggs",
    "weight": null,
-   "ref": "2026-09",
-   "ytd": 1.368,
-   "ytd_ly": 4.7692,
-   "yoy": 1.0727,
+   "ref": "2026-10",
+   "ytd": 0.7601,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -1914,6 +1847,10 @@
     [
      "2026-09",
      347.685
+    ],
+    [
+     "2026-10",
+     345.6
     ]
    ]
   },
@@ -1922,10 +1859,10 @@
    "id": "CUURS12ASEFJ",
    "label": "Dairy and related products",
    "weight": null,
-   "ref": "2026-09",
-   "ytd": -0.7107,
-   "ytd_ly": 0.8769,
-   "yoy": -0.1365,
+   "ref": "2026-10",
+   "ytd": -1.4339,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -2010,6 +1947,10 @@
     [
      "2026-09",
      279.394
+    ],
+    [
+     "2026-10",
+     277.359
     ]
    ]
   },
@@ -2018,10 +1959,10 @@
    "id": "CUURS12ASAF113",
    "label": "Fruits and vegetables",
    "weight": null,
-   "ref": "2026-09",
-   "ytd": 3.9144,
-   "ytd_ly": -0.2609,
-   "yoy": 3.8149,
+   "ref": "2026-10",
+   "ytd": 5.5546,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -2106,6 +2047,10 @@
     [
      "2026-09",
      398.068
+    ],
+    [
+     "2026-10",
+     404.351
     ]
    ]
   },
@@ -2114,10 +2059,10 @@
    "id": "CUURS12ASAF114",
    "label": "Nonalcoholic beverages",
    "weight": null,
-   "ref": "2026-09",
-   "ytd": 5.7408,
-   "ytd_ly": 5.2408,
-   "yoy": 5.5891,
+   "ref": "2026-10",
+   "ytd": 6.7894,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -2202,6 +2147,10 @@
     [
      "2026-09",
      357.681
+    ],
+    [
+     "2026-10",
+     361.228
     ]
    ]
   },
@@ -2210,10 +2159,10 @@
    "id": "CUURS12ASAF115",
    "label": "Other food at home",
    "weight": null,
-   "ref": "2026-09",
-   "ytd": 0.382,
-   "ytd_ly": 2.3791,
-   "yoy": 1.3013,
+   "ref": "2026-10",
+   "ytd": 3.2163,
+   "ytd_ly": null,
+   "yoy": null,
    "series": [
     [
      "2024-12",
@@ -2298,6 +2247,10 @@
     [
      "2026-09",
      298.22
+    ],
+    [
+     "2026-10",
+     306.64
     ]
    ]
   }
@@ -2307,11 +2260,11 @@
    "id": "APU0100703112",
    "label": "Ground beef, 100% beef",
    "unit": "lb",
-   "ref": "2026-09",
-   "ytd": 6.3191,
-   "ytd_ly": 9.5085,
-   "yoy": 14.5095,
-   "latest": 7.016,
+   "ref": "2026-10",
+   "ytd": 1.2426,
+   "ytd_ly": null,
+   "yoy": null,
+   "latest": 6.681,
    "series": [
     [
      "2024-12",
@@ -2396,6 +2349,10 @@
     [
      "2026-09",
      7.016
+    ],
+    [
+     "2026-10",
+     6.681
     ]
    ]
   },
@@ -2403,11 +2360,11 @@
    "id": "APU0100FF1101",
    "label": "Chicken breast, boneless",
    "unit": "lb",
-   "ref": "2026-09",
-   "ytd": 1.047,
-   "ytd_ly": 6.8246,
-   "yoy": -4.6046,
-   "latest": 3.957,
+   "ref": "2026-10",
+   "ytd": 1.5577,
+   "ytd_ly": null,
+   "yoy": null,
+   "latest": 3.977,
    "series": [
     [
      "2024-12",
@@ -2492,6 +2449,10 @@
     [
      "2026-09",
      3.957
+    ],
+    [
+     "2026-10",
+     3.977
     ]
    ]
   },
@@ -2499,11 +2460,11 @@
    "id": "APU0100706111",
    "label": "Whole chicken",
    "unit": "lb",
-   "ref": "2026-09",
-   "ytd": -0.831,
-   "ytd_ly": 0.1848,
-   "yoy": -0.9225,
-   "latest": 2.148,
+   "ref": "2026-10",
+   "ytd": 0.7387,
+   "ytd_ly": null,
+   "yoy": null,
+   "latest": 2.182,
    "series": [
     [
      "2024-12",
@@ -2588,6 +2549,10 @@
     [
      "2026-09",
      2.148
+    ],
+    [
+     "2026-10",
+     2.182
     ]
    ]
   },
@@ -2595,11 +2560,11 @@
    "id": "APU0100704111",
    "label": "Bacon, sliced",
    "unit": "lb",
-   "ref": "2026-09",
-   "ytd": 2.3106,
-   "ytd_ly": 15.4485,
-   "yoy": -8.0937,
-   "latest": 7.926,
+   "ref": "2026-10",
+   "ytd": 2.2073,
+   "ytd_ly": null,
+   "yoy": null,
+   "latest": 7.918,
    "series": [
     [
      "2024-12",
@@ -2684,6 +2649,10 @@
     [
      "2026-09",
      7.926
+    ],
+    [
+     "2026-10",
+     7.918
     ]
    ]
   },
@@ -2691,11 +2660,11 @@
    "id": "APU0100712311",
    "label": "Tomatoes, field grown",
    "unit": "lb",
-   "ref": "2026-09",
-   "ytd": 21.1825,
-   "ytd_ly": -8.8824,
-   "yoy": 19.1304,
-   "latest": 2.603,
+   "ref": "2026-10",
+   "ytd": 28.0261,
+   "ytd_ly": null,
+   "yoy": null,
+   "latest": 2.75,
    "series": [
     [
      "2024-12",
@@ -2780,6 +2749,10 @@
     [
      "2026-09",
      2.603
+    ],
+    [
+     "2026-10",
+     2.75
     ]
    ]
   },
@@ -2787,11 +2760,11 @@
    "id": "APU0100712112",
    "label": "White potatoes",
    "unit": "lb",
-   "ref": "2026-09",
-   "ytd": 16.4747,
-   "ytd_ly": 14.0657,
-   "yoy": -9.0009,
-   "latest": 1.011,
+   "ref": "2026-10",
+   "ytd": 13.8249,
+   "ytd_ly": null,
+   "yoy": null,
+   "latest": 0.988,
    "series": [
     [
      "2024-12",
@@ -2876,37 +2849,41 @@
     [
      "2026-09",
      1.011
+    ],
+    [
+     "2026-10",
+     0.988
     ]
    ]
   }
  ],
  "us": {
   "all": {
-   "ref": "2026-09",
-   "ytd": 3.9765,
-   "ytd_ly": 2.9135,
-   "yoy": 3.7377
+   "ref": "2026-10",
+   "ytd": 4.1527,
+   "ytd_ly": null,
+   "yoy": null
   },
   "rent": {
-   "ref": "2026-09",
-   "ytd": 2.2092,
-   "ytd_ly": 2.3499,
-   "yoy": 2.7818
+   "ref": "2026-10",
+   "ytd": 2.4551,
+   "ytd_ly": null,
+   "yoy": null
   },
   "groceries": {
-   "ref": "2026-09",
-   "ytd": 1.9305,
-   "ytd_ly": 2.4846,
-   "yoy": 1.8086
+   "ref": "2026-10",
+   "ytd": 2.2847,
+   "ytd_ly": null,
+   "yoy": null
   }
  },
  "gas_bls": {
   "id": "APUS12A74714",
-  "ref": "2026-09",
-  "ytd": 46.6225,
-  "ytd_ly": 6.2008,
-  "yoy": 36.7933,
-  "latest": 4.428,
+  "ref": "2026-10",
+  "ytd": 45.5298,
+  "ytd_ly": 1.7388,
+  "yoy": 41.7285,
+  "latest": 4.395,
   "series": [
    [
     "2024-12",
@@ -2995,14 +2972,18 @@
    [
     "2026-09",
     4.428
+   ],
+   [
+    "2026-10",
+    4.395
    ]
   ]
  },
  "pay": {
   "id": "SMU36935610500000003",
-  "ref": "2026-09",
-  "latest": 44.22,
-  "yoy_3mo": 1.9736,
+  "ref": "2026-10",
+  "latest": 44.27,
+  "yoy_3mo": 1.7796,
   "series": [
    [
     "2024-01",
@@ -3134,12 +3115,16 @@
    ],
    [
     "2026-09",
-    44.22
+    44.53
+   ],
+   [
+    "2026-10",
+    44.27
    ]
   ]
  },
  "administered": {
-  "verified": "2026-10-21",
+  "verified": "2026-11-24",
   "items": [
    {
     "id": "subway",
@@ -3170,7 +3155,7 @@
     ],
     "note_src": "https://www.mta.info/fares2025",
     "now": 3.0,
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-24",
     "at_base": 2.9,
     "at_year_ago": 2.9,
     "since_dec": 3.4483,
@@ -3203,7 +3188,7 @@
      "https://www.mta.info/fares2025"
     ],
     "now": 7.25,
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-24",
     "at_base": 7.0,
     "at_year_ago": 7.0,
     "since_dec": 3.5714,
@@ -3238,7 +3223,7 @@
     ],
     "note_src": "https://www.mta.info/fares-tolls/tolls/vehicle-types",
     "now": 7.46,
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-24",
     "at_base": 6.94,
     "at_year_ago": 6.94,
     "since_dec": 7.4928,
@@ -3267,7 +3252,7 @@
     ],
     "note_src": "https://www.mta.info/fares-tolls/tolls/congestion-relief-zone/about",
     "now": 9.0,
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-24",
     "at_base": 9.0,
     "at_year_ago": 9.0,
     "since_dec": 0.0,
@@ -3311,7 +3296,7 @@
      "https://www.nyc.gov/assets/nycwaterboard/downloads/pdf/public_notices/nyc-rate-adoption-public-notice-fy-2027.pdf"
     ],
     "now": 1297,
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-24",
     "at_base": 1224,
     "at_year_ago": 1224,
     "since_dec": 5.9641,
@@ -3347,7 +3332,7 @@
     ],
     "note_src": "https://dol.ny.gov/minimum-wage-0",
     "now": 17.0,
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-24",
     "at_base": 16.5,
     "at_year_ago": 16.5,
     "since_dec": 3.0303,
@@ -3377,7 +3362,7 @@
     ],
     "note_src": "https://citibikenyc.com/pricechange2026",
     "now": 239,
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-24",
     "at_base": null,
     "at_year_ago": null
    }
@@ -3480,99 +3465,103 @@
   "source": "Zillow Observed Rent Index, New York city, all homes plus multifamily, smoothed (private source)",
   "url": "https://www.zillow.com/research/data/",
   "unit": "$/month",
-  "ref": "2026-09",
-  "ytd": 6.906,
-  "ytd_ly": 7.3664,
-  "yoy": 5.1611,
-  "latest": 4088.76,
+  "ref": "2026-10",
+  "ytd": 6.598,
+  "ytd_ly": 6.9466,
+  "yoy": 5.2423,
+  "latest": 3996.22,
   "series": [
    [
     "2024-12",
-    3621.33
+    3550.52
    ],
    [
     "2025-01",
-    3631.26
+    3560.66
    ],
    [
     "2025-02",
-    3658.8
+    3588.16
    ],
    [
     "2025-03",
-    3701.72
+    3630.26
    ],
    [
     "2025-04",
-    3743.09
+    3670.58
    ],
    [
     "2025-05",
-    3777.14
+    3703.8
    ],
    [
     "2025-06",
-    3822.38
+    3748.28
    ],
    [
     "2025-07",
-    3863.49
+    3788.53
    ],
    [
     "2025-08",
-    3893.62
+    3818.27
    ],
    [
     "2025-09",
-    3888.09
+    3812.61
    ],
    [
     "2025-10",
-    3872.92
+    3797.16
    ],
    [
     "2025-11",
-    3842.61
+    3766.35
    ],
    [
     "2025-12",
-    3824.63
+    3748.87
    ],
    [
     "2026-01",
-    3818.91
+    3744.12
    ],
    [
     "2026-02",
-    3843.96
+    3769.54
    ],
    [
     "2026-03",
-    3888.22
+    3812.75
    ],
    [
     "2026-04",
-    3936.44
+    3860.08
    ],
    [
     "2026-05",
-    3990.95
+    3913.45
    ],
    [
     "2026-06",
-    4037.88
+    3959.46
    ],
    [
     "2026-07",
-    4075.07
+    3995.77
    ],
    [
     "2026-08",
-    4091.58
+    4011.9
    ],
    [
     "2026-09",
-    4088.76
+    4008.95
+   ],
+   [
+    "2026-10",
+    3996.22
    ]
   ]
  },
@@ -3581,11 +3570,11 @@
    "source": "EIA, New York City regular gasoline retail price, weekly (EMM_EPMR_PTE_Y35NY_DPG); monthly = average of the weeks",
    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EMM_EPMR_PTE_Y35NY_DPG&f=W",
    "unit": "$/gal",
-   "ref": "2026-09",
-   "ytd": 50.7738,
-   "ytd_ly": 4.9959,
-   "yoy": 41.4112,
-   "latest": 4.345,
+   "ref": "2026-10",
+   "ytd": 48.1782,
+   "ytd_ly": 1.114,
+   "yoy": 44.3123,
+   "latest": 4.2702,
    "series": [
     [
      "2024-12",
@@ -3677,28 +3666,32 @@
     ],
     [
      "2026-10",
-     4.301
+     4.2702
+    ],
+    [
+     "2026-11",
+     3.9832
     ]
    ],
    "last_week": {
-    "date": "2026-10-19",
-    "v": 4.249,
+    "date": "2026-11-23",
+    "v": 3.847,
     "year_ago": {
-     "date": "2025-10-20",
-     "v": 2.933
+     "date": "2025-11-24",
+     "v": 2.989
     }
    },
-   "fetched": "2026-10-21"
+   "fetched": "2026-11-24"
   },
   "coned": {
    "source": "EIA-861M, Consolidated Edison Co-NY, residential revenue divided by residential sales, full-service customers",
    "url": "https://www.eia.gov/electricity/data/eia861m/",
    "unit": "cents/kWh",
-   "ref": "2026-07",
-   "ytd": 12.102,
-   "ytd_ly": 2.7449,
-   "yoy": 15.0375,
-   "latest": 41.295,
+   "ref": "2026-09",
+   "ytd": 0.9583,
+   "ytd_ly": 4.7599,
+   "yoy": 1.6092,
+   "latest": 37.19,
    "series": [
     [
      "2024-12",
@@ -3779,6 +3772,14 @@
     [
      "2026-07",
      41.295
+    ],
+    [
+     "2026-08",
+     39.959
+    ],
+    [
+     "2026-09",
+     37.19
     ]
    ],
    "preliminary": "Preliminary"
@@ -3788,15 +3789,15 @@
    "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=W_EPD2F_PRS_SNY_DPG&f=W",
    "unit": "$/gal",
    "last_week": {
-    "date": "2026-10-12",
-    "v": 6.335,
+    "date": "2026-11-16",
+    "v": 5.971,
     "year_ago": {
-     "date": "2025-10-13",
-     "v": 3.837
+     "date": "2025-11-17",
+     "v": 4.043
     }
    },
-   "fetched": "2026-10-21",
-   "yoy_week": 65.1029,
+   "fetched": "2026-11-24",
+   "yoy_week": 47.6874,
    "series": [
     [
      "2024-10",
@@ -3856,17 +3857,21 @@
     ],
     [
      "2026-10",
-     6.281
+     6.3515
+    ],
+    [
+     "2026-11",
+     6.1457
     ]
    ]
   },
   "northeast": {
    "electricity": {
     "id": "CUUR0100SEHF01",
-    "ref": "2026-09",
-    "ytd": 4.8646,
-    "ytd_ly": 7.7111,
-    "yoy": 7.1139,
+    "ref": "2026-10",
+    "ytd": 3.7673,
+    "ytd_ly": null,
+    "yoy": null,
     "series": [
      [
       "2024-12",
@@ -3951,15 +3956,19 @@
      [
       "2026-09",
       327.099
+     ],
+     [
+      "2026-10",
+      323.676
      ]
     ]
    },
    "piped_gas": {
     "id": "CUUR0100SEHF02",
-    "ref": "2026-09",
-    "ytd": -0.6344,
-    "ytd_ly": 2.0632,
-    "yoy": 9.5585,
+    "ref": "2026-10",
+    "ytd": -2.1463,
+    "ytd_ly": null,
+    "yoy": null,
     "series": [
      [
       "2024-12",
@@ -4044,6 +4053,10 @@
      [
       "2026-09",
       276.301
+     ],
+     [
+      "2026-10",
+      272.097
      ]
     ]
    }
@@ -4052,64 +4065,68 @@
  "homes": {
   "source": "FHFA House Price Index, New York-Jersey City-White Plains, NY-NJ metropolitan division (35614), not seasonally adjusted",
   "url": "https://www.fhfa.gov/data/hpi/datasets",
-  "ref": "2026-Q2",
-  "yoy": 5.5679,
+  "ref": "2026-Q3",
+  "yoy": 3.2861,
   "series": [
    [
     "2023-Q1",
-    369.46
+    369.42
    ],
    [
     "2023-Q2",
-    381.67
+    381.2
    ],
    [
     "2023-Q3",
-    387.68
+    387.07
    ],
    [
     "2023-Q4",
-    398.87
+    397.8
    ],
    [
     "2024-Q1",
-    405.03
+    403.4
    ],
    [
     "2024-Q2",
-    422.26
+    421.44
    ],
    [
     "2024-Q3",
-    421.7
+    420.97
    ],
    [
     "2024-Q4",
-    431.38
+    430.42
    ],
    [
     "2025-Q1",
-    440.03
+    438.46
    ],
    [
     "2025-Q2",
-    450.08
+    449.54
    ],
    [
     "2025-Q3",
-    450.65
+    449.77
    ],
    [
     "2025-Q4",
-    451.44
+    450.98
    ],
    [
     "2026-Q1",
-    451.67
+    451.32
    ],
    [
     "2026-Q2",
-    475.14
+    475.51
+   ],
+   [
+    "2026-Q3",
+    464.55
    ]
   ]
  },
